@@ -64,5 +64,4 @@ for number in range(1, 16):
         number = "Fizz"
     elif number % 5 == 0:
         number = "Buzz"
-    else:
-        print(number)
+    print(number)
