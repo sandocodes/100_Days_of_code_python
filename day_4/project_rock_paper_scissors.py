@@ -3,7 +3,7 @@ Day4 Project: Rock, Paper, Scissors
 Written By: Justin Sando Kollie
 Description: 
         Rules: Rock beats Scissors, Scissors beats Paper and Paper beats Rock
-Date: January 8, 2024
+Date: January 9, 2024
 Project Source: The source of this project is from a Udemy Course: 100 Days of Code: The Complete Python Pro Bootcamp for 2023
 """
 import random

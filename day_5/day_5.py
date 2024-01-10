@@ -42,7 +42,8 @@
 # Syntax: for number in range(start, end, excluding the end):
 #             print(number)
 # total = 0
-# for number in range(1, 101):
+# target = 100
+# for number in range(1, target + 1):
 #     total += number
 # print(total)
 
@@ -55,8 +56,8 @@
 #         even_sum += number
 # print(even_sum)
 
-# FizzBuzz
 
+# FizzBuzz
 for number in range(1, 16):
     if number % 3 == 0 and number % 5 == 0:
         number = "FizzBuzz"
