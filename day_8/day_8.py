@@ -22,10 +22,4 @@ def greet_with(name, location):
 
 
 # Keyword Arguments:
-# greet_with(location="Boston", name="Jack Bauer")
-
-
-# Test Code:
-for i, j in enumerate(['bar', 'foo', 'bar', 'baz', 'bar']):
-    if j == 'bar':
-        print(i)
+greet_with(location="Boston", name="Jack Bauer")
