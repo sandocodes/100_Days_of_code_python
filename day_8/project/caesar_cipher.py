@@ -15,14 +15,14 @@ print(logo)
 
 
 
-alphabets = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+alphabets = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 should_continue = True
 
 while should_continue:
     direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
     text = input("Type your message:\n").lower()
-    shift = int(input("Type the shift number:\n"))
+    shift = int(input("Enter a number between 1 and 100:\n"))
 
     def caesar_cipher(start_text, shift_amount, cipher_direction):
         end_text = ""
@@ -39,7 +39,8 @@ while should_continue:
                 end_text += char
         print(f"The {cipher_direction}d text is: {end_text}")
 
-    shift = round(shift & len(alphabets))
+    shift = round(shift % len(alphabets))
+    
     caesar_cipher(start_text=text, shift_amount=shift, cipher_direction=direction)
 
     question = str(input("Type 'yes' if you want to continue. Otherwise type 'no'.\n")).lower()
