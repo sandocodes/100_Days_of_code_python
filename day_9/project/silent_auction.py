@@ -23,7 +23,7 @@ while more_bid:
     def silent_auction(username, userbid):
         # Add name and bid into the bids dictionary as key and value
         new_bid = {}
-        new_bid["user"] = username
+        new_bid["name"] = username
         new_bid["bid_amount"] = userbid
 
         bids.append(new_bid)
@@ -31,16 +31,16 @@ while more_bid:
     silent_auction(userbid=user_bid, username=user_name)
 
     # Is there more bidders?
-    more_bidders = str(input("Are there any other bidders? Type 'yes' or 'no'.\n")).lower()
-    if more_bidders != 'no':
+    should_continue = str(input("Are there any other bidders? Type 'yes' or 'no'.\n")).lower()
+    if should_continue != 'no':
         # Clear the screen
         os.system("clear")
     else:
         more_bid = False
-        for i in bids:
-            if i["bid_amount"] > highest_bid:
-                highest_bid = i["bid_amount"]
-                highest_bidder = i["user"]
+        for bid in bids:
+            if bid["bid_amount"] > highest_bid:
+                highest_bid = bid["bid_amount"]
+                highest_bidder = bid["name"]
         
         # Clear the screen
         os.system("clear")
