@@ -18,28 +18,25 @@ def is_leap(year):
     if year % 4 == 0:
         if year % 100 == 0:
             if year % 400 == 0:
-                return "True"
+                return True
             else:
-                return "False"
+                return False
         else:
-            return "True"
+            return True
     else:
-        return "False"
+        return False
   
 # TODO: Add more code here 👇
-def days_in_month(yr, month):
+def days_in_month(year, month):
     month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-    leap = False
-    if month != 2:
-        return month_days[month - 1]
     
-    if is_leap(yr):
-        return 29
+    if is_leap(year):
+        if month == 2:
+            return 29
+        else:
+            return 28
     else:
         return month_days[month - 1]
-    
-    
-    # return month_days[month - 1]
   
 #🚨 Do NOT change any of the code below 
 year = int(input("Year: ")) # Enter a year
