@@ -40,12 +40,12 @@ while not game_over:
     # If the guessed word is not in the chosen_word, reduce the user's lives by 1
     if guess not in chosen_word:
         lives -= 1
-        print(f"You have {lives} lives left.")
         # If user have no lives left, Game Over
         if lives == 0:
             # End the game
             game_over = True
             print("Game over, you lose.")
+            print(f"The word is: {chosen_word}")
 
     # Join all the elements in the 'display' list and turn it into a string
     print(f"{' '.join(display)}")
@@ -56,5 +56,4 @@ while not game_over:
         game_over = True
         print("You win.")
 
-
-    print(stages[lives])
+    print(f"{stages[lives]}")
