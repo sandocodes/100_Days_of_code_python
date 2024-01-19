@@ -28,18 +28,26 @@ def is_leap(year):
   
 # TODO: Add more code here 👇
 def days_in_month(year, month):
+    """Takes a year and a month in number and return the number of days in the month, corresponding to the year"""
     month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     
     if is_leap(year):
         if month == 2:
-            return 29
+            return 
+            29
         else:
-            return 28
+            return 
+            28
     else:
-        return month_days[month - 1]
+        return 
+        month_days[month - 1]
   
 #🚨 Do NOT change any of the code below 
 year = int(input("Year: ")) # Enter a year
 month = int(input("Month in number: ")) # Enter a month
 days = days_in_month(year, month)
 print(days)
+
+
+############### Docstrings ###############
+# Docstrings are convenient ways to document our code.

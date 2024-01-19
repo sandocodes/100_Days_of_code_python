@@ -1,0 +1,89 @@
+<mxfile host="Electron" modified="2024-01-19T04:52:13.274Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.18 Chrome/120.0.6099.199 Electron/28.1.2 Safari/537.36" etag="4AvoLqySlYiQaXMXvVeP" version="22.1.18" type="device">
+  <diagram name="Page-1" id="bWRgNKSvvlEqO31y4SQ5">
+    <mxGraphModel dx="922" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NDc23wZl009bbF-Bav8F-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="NDc23wZl009bbF-Bav8F-1" target="NDc23wZl009bbF-Bav8F-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-1" value="START" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="350" y="70" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="NDc23wZl009bbF-Bav8F-3" target="NDc23wZl009bbF-Bav8F-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-3" value="Create operation&lt;br&gt;functions: add, subtract, multiply and divide" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="350.5" y="150" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="NDc23wZl009bbF-Bav8F-6" target="NDc23wZl009bbF-Bav8F-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-6" value="Ask user to input the first number" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="365" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="NDc23wZl009bbF-Bav8F-7" target="NDc23wZl009bbF-Bav8F-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-7" value="Print operatiors&lt;br&gt;(+,-,*,/)" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="365" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="NDc23wZl009bbF-Bav8F-9" target="NDc23wZl009bbF-Bav8F-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="NDc23wZl009bbF-Bav8F-9" target="NDc23wZl009bbF-Bav8F-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-9" value="Ask user to input an&lt;br&gt;operator" style="whiteSpace=wrap;html=1;rounded=1;fontFamily=Comic Sans MS;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="365" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="NDc23wZl009bbF-Bav8F-11" target="NDc23wZl009bbF-Bav8F-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-11" value="As the user to input&lt;br&gt;the next number" style="whiteSpace=wrap;html=1;rounded=1;fontFamily=Comic Sans MS;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="365" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="NDc23wZl009bbF-Bav8F-15" target="NDc23wZl009bbF-Bav8F-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-15" value="calculate the numbers based on the&lt;br&gt;operator input" style="whiteSpace=wrap;html=1;rounded=1;fontFamily=Comic Sans MS;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="348" y="610" width="155" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="NDc23wZl009bbF-Bav8F-17" target="NDc23wZl009bbF-Bav8F-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-17" value="Print the answer" style="whiteSpace=wrap;html=1;rounded=1;fontFamily=Comic Sans MS;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="365" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="NDc23wZl009bbF-Bav8F-19" target="NDc23wZl009bbF-Bav8F-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-19" value="Ask the user&lt;br&gt;if they want to&lt;br&gt;continue calculating.&lt;br&gt;&#39;y&#39; or &#39;n&#39;" style="whiteSpace=wrap;html=1;rounded=1;fontFamily=Comic Sans MS;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="348" y="810" width="155" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-24" value="&lt;h3 style=&quot;font-size: 13px;&quot;&gt;y for Yes&lt;/h3&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Comic Sans MS;fontStyle=1;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="250" y="920" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-25" value="Start a new calculation" style="whiteSpace=wrap;html=1;rounded=1;fontFamily=Comic Sans MS;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="630" y="820" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-27" value="n for No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontFamily=Comic Sans MS;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="530" y="820" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NDc23wZl009bbF-Bav8F-29" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="890" as="sourcePoint" />
+            <mxPoint x="365" y="450" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="950" />
+              <mxPoint x="160" y="950" />
+              <mxPoint x="160" y="850" />
+              <mxPoint x="160" y="450" />
+              <mxPoint x="285" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
