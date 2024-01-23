@@ -50,7 +50,7 @@ def guess_number():
 
     # Ask the user if they want to play again. If yes, clear the screen and rerun the guess_number() function
     if input("Do you want to play again? Type 'yes' to continue and 'no' to exit: ") == "yes":
-        # Clear the screen and run game again
+        # Clear the screen and run start game over
         os.system("clear")
         guess_number()
 
