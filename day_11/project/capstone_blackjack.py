@@ -33,6 +33,7 @@ def calculate_score(cards):
     return sum(cards)
 
 def compare(user_score, computer_score):
+    """Compare the user score with the computer score to determine who wins"""
     if user_score == computer_score:
         return "Draw"
     elif computer_score == 0:
@@ -49,6 +50,7 @@ def compare(user_score, computer_score):
         return "You lose"
 
 def play_game():
+    """Play the Blackjack (21) Game"""
 
     # Display Project Logo
     print(logo)
