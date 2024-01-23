@@ -51,7 +51,7 @@ def play_game():
     if attempts_left == 0:
         print("You ran out of guesses, you lose.")
 
-    if input("Do you want to continue? Type 'yes' to continue and 'no' to exit: ") == "yes":
+    if input("Do you want to play again? Type 'yes' to continue and 'no' to exit: ") == "yes":
         # Clear the screen and run game again
         os.system("clear")
         play_game()
