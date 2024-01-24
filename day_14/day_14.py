@@ -1,0 +1,1 @@
+# No lesson, just an overview of the Day's project
