@@ -59,8 +59,6 @@ def play_game():
         personB_followerCount = int(data[index_personB]["follower_count"])
         # print(personB_followerCount) #For testing purpose, will delete later
 
-
-        
         print(f"Compare A: {personA}, a {personA_Description}, from {personA_Country}.\n{vs}\nAgainst B: {personB}, a {personB_Description}, from {personB_Country}.")
 
         # Compare who has more followers based on user input
