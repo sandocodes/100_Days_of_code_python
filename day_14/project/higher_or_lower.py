@@ -34,6 +34,9 @@ score = 0
 index_personA = randint(0, len(data) - 1)
 index_personB = randint(0, len(data) - 1)
 
+if index_personA == index_personB:
+    index_personB = randint(0, len(data) - 1)
+
 # Start Game
 def play_game():
     # Print project logo and project introduction
