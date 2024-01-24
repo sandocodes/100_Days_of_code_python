@@ -11,10 +11,11 @@ Written By:
 ░  ░  ░    ░   ▒      ░   ░ ░  ░ ░  ░ ░ ░ ░ ▒  ░        ░ ░ ░ ▒   ░ ░  ░    ░   ░  ░  ░  
       ░        ░  ░         ░    ░        ░ ░  ░ ░          ░ ░     ░       ░  ░      ░  
                                ░               ░                  ░                       
-Description: User inputs 'A' or 'B' to guess which celebrity has the most followers. If the user guesses right, the celebrity in 'B' position gets put in the 'A' position and a random celebrity is selected for the 'B' position. The current score also get printed. If the user guesses wrong, the final score, along with a message is printed to the console. Moreover, if the user inputs anything other than 'A' or 'B', a message: 'Wrong input' gets printed and the final score is also printed.
+Description: User inputs 'A' or 'B' to guess which celebrity has the most followers. If the user guesses right, the celebrity in 'B' position gets put in the 'A' position and a random celebrity is selected for the 'B' position. A feedback and the current score also get printed. If the user guesses wrong, the final score, along with a message is printed to the console. Moreover, if the user inputs anything other than 'A' or 'B', a message: 'Wrong input' gets printed and the final score is also printed.
 Date: January 24, 2024
 Project Source: The source of this project is from a Udemy Course: 100 Days of Code: The Complete Python Pro Bootcamp for 2023.
 """
+
 
 # Modules Imports
 from os import system
@@ -34,6 +35,9 @@ index_personA = randint(0, len(data) - 1)
 index_personB = randint(0, len(data) - 1)
 
 def play_game():
+    # Print project logo and project introduction
+    print(logo)
+
     # variables to be modified in the function
     global is_game_over, score, index_personB, index_personA
 
@@ -55,8 +59,7 @@ def play_game():
         # print(personB_followerCount) #For testing purpose, will delete later
 
 
-        # Print project logo and project introduction
-        print(logo)
+        
         print(f"Compare A: {personA}, a {personA_Description}, from {personA_Country}.\n{vs}\nAgainst B: {personB}, a {personB_Description}, from {personB_Country}.")
 
         # Compare who has more followers based on user input
@@ -67,6 +70,8 @@ def play_game():
             #if personA follower count is greater than or equal to personB follower count
             if personA_followerCount >= personB_followerCount:
                 score += 1 #Add 1 to the score
+                system("clear") #clear the screen
+                print(logo) #print Game logo
                 print(f"You're right! Current score: {score}") #Output the current score
                 index_personA = index_personB #Set variable index_personA to the index of the previous personB
                 index_personB = randint(0, len(data) -1) #Generate random index for personB
@@ -79,6 +84,8 @@ def play_game():
             #If personB follower count is GREATER THAN or EQUAL to personA follower count
             if personB_followerCount >= personA_followerCount:
                 score += 1 #Add 1 to the score
+                system("clear") #clear the screen
+                print(logo) #Print Game logo
                 print(f"You're right! Current score: {score}") #Output the current score
                 index_personA = index_personB #Set variable index_personA to the index of the previous personB
                 index_personB = randint(0, len(data) -1) #Generate random index for personB
