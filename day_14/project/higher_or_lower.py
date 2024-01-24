@@ -1,86 +1,97 @@
 """
 Day4 Project: Higher or Lower
-Written By: Justin Sando Kollie
-Description: 
+Written By: 
+  ██████  ▄▄▄       ███▄    █ ▓█████▄  ▒█████   ▄████▄   ▒█████  ▓█████▄ ▓█████   ██████ 
+▒██    ▒ ▒████▄     ██ ▀█   █ ▒██▀ ██▌▒██▒  ██▒▒██▀ ▀█  ▒██▒  ██▒▒██▀ ██▌▓█   ▀ ▒██    ▒ 
+░ ▓██▄   ▒██  ▀█▄  ▓██  ▀█ ██▒░██   █▌▒██░  ██▒▒▓█    ▄ ▒██░  ██▒░██   █▌▒███   ░ ▓██▄   
+  ▒   ██▒░██▄▄▄▄██ ▓██▒  ▐▌██▒░▓█▄   ▌▒██   ██░▒▓▓▄ ▄██▒▒██   ██░░▓█▄   ▌▒▓█  ▄   ▒   ██▒
+▒██████▒▒ ▓█   ▓██▒▒██░   ▓██░░▒████▓ ░ ████▓▒░▒ ▓███▀ ░░ ████▓▒░░▒████▓ ░▒████▒▒██████▒▒
+▒ ▒▓▒ ▒ ░ ▒▒   ▓▒█░░ ▒░   ▒ ▒  ▒▒▓  ▒ ░ ▒░▒░▒░ ░ ░▒ ▒  ░░ ▒░▒░▒░  ▒▒▓  ▒ ░░ ▒░ ░▒ ▒▓▒ ▒ ░
+░ ░▒  ░ ░  ▒   ▒▒ ░░ ░░   ░ ▒░ ░ ▒  ▒   ░ ▒ ▒░   ░  ▒     ░ ▒ ▒░  ░ ▒  ▒  ░ ░  ░░ ░▒  ░ ░
+░  ░  ░    ░   ▒      ░   ░ ░  ░ ░  ░ ░ ░ ░ ▒  ░        ░ ░ ░ ▒   ░ ░  ░    ░   ░  ░  ░  
+      ░        ░  ░         ░    ░        ░ ░  ░ ░          ░ ░     ░       ░  ░      ░  
+                               ░               ░                  ░                       
+Description: User inputs 'A' or 'B' to guess which celebrity has the most followers. If the user guesses right, the celebrity in 'B' position gets put in the 'A' position and a random celebrity is selected for the 'B' position. The current score also get printed. If the user guesses wrong, the final score, along with a message is printed to the console. Moreover, if the user inputs anything other than 'A' or 'B', a message: 'Wrong input' gets printed and the final score is also printed.
 Date: January 24, 2024
 Project Source: The source of this project is from a Udemy Course: 100 Days of Code: The Complete Python Pro Bootcamp for 2023.
 """
 
-import random
+# Modules Imports
+from os import system
+from random import randint
 from art import logo, vs
 from game_data import data
 
-# Print Logo
-print(logo)
 
-# Print VS.
-# print(vs)
-
-# print(random_index_A)
-# print(random_index_B)
-
-
-# def compare_followers():
-    
+# Global Variables
 is_game_over = False
 score = 0
 
-   
 
-while not is_game_over:
-    # Task1: Generate 2 random names from [data] list
-    random_index_A = random.randint(0, len(data) - 1)
-    random_index_B = random.randint(0, len(data) - 1)
+#  Generate 2 random indices, which are used to generate random data
+# Use randint to generate random indices
+index_personA = randint(0, len(data) - 1)
+index_personB = randint(0, len(data) - 1)
 
-    # name
-    nameA = data[random_index_A]["name"]
-    # description
-    descriptionA = data[random_index_A]["description"]
-    # country
-    countryA = data[random_index_A]["country"]
-    # num_of_followers
-    follower_countA = int(data[random_index_A]["follower_count"])
-    print(follower_countA)
+def play_game():
+    # variables to be modified in the function
+    global is_game_over, score, index_personB, index_personA
 
-    # Get random data B:
-    # name
-    nameB = data[random_index_B]["name"]
-    # description
-    descriptionB = data[random_index_B]["description"]
-    # country
-    countryB = data[random_index_B]["country"]
-    # num_of_followers
-    follower_countB = int(data[random_index_B]["follower_count"])
-    print(follower_countB)
+    # While game is not over:
+    while not is_game_over:
 
-    #   (b) Compare who has more followers
-    # Print Comparison
-    print(f"Compare A: {nameA}, a {descriptionA}, from {countryA}.\n{vs}\nAgainst B: {nameB}, a {descriptionB}, from {countryB}")
-    whos_higher = str(input("Who has more followers? Type 'A' or 'B': ")).upper()
-    if whos_higher == "A":
-        # global score
-        if follower_countA >= follower_countB:
-            score += 1
-            print(f"You're right! Current score: {score}")
-            # compare_followers()
-        else:
-            is_game_over = True
-            print(f"Sorry, that's wrong. Final Score: {score}")
+        # Random Data For Person A
+        personA = data[index_personA]["name"]
+        personA_Description = data[index_personA]["description"]
+        personA_Country = data[index_personA]["country"]
+        personA_followerCount = int(data[index_personA]["follower_count"])
+        # print(personA_followerCount) #For testing purpose, will delete later
 
-    elif whos_higher == "B":
-        if follower_countB >= follower_countA:
-            score += 1
-            print(f"You're right! Current score: {score}")
-            # compare_followers()
-        else:
-            is_game_over = True
-            print(f"Sorry, that's wrong. Final Score: {score}")
-
-    else:
-        is_game_over = True
-        print(f"Wrong input")
-        print(f"Final Score: {score}")
+        # Random Data For Person B:
+        personB = data[index_personB]["name"]
+        personB_Description = data[index_personB]["description"]
+        personB_Country = data[index_personB]["country"]
+        personB_followerCount = int(data[index_personB]["follower_count"])
+        # print(personB_followerCount) #For testing purpose, will delete later
 
 
+        # Print project logo and project introduction
+        print(logo)
+        print(f"Compare A: {personA}, a {personA_Description}, from {personA_Country}.\n{vs}\nAgainst B: {personB}, a {personB_Description}, from {personB_Country}.")
 
-# compare_followers()
+        # Compare who has more followers based on user input
+        # Take user input and return UpperCase version
+        whos_higher = str(input("Who has more followers? Type 'A' or 'B': "))
+
+        if whos_higher.upper() == "A": #If user inputs "A"
+            #if personA follower count is greater than or equal to personB follower count
+            if personA_followerCount >= personB_followerCount:
+                score += 1 #Add 1 to the score
+                print(f"You're right! Current score: {score}") #Output the current score
+                index_personA = index_personB #Set variable index_personA to the index of the previous personB
+                index_personB = randint(0, len(data) -1) #Generate random index for personB
+            else: #if personA follower count is less than personB follower count
+                is_game_over = True #End the game or Game Over
+                system("clear") #Clear the screen
+                print(logo) #Print Game logo
+                print(f"Sorry, that's wrong. Final Score: {score}") #Output the final score #Run the wrong_guess() function Line26
+        elif whos_higher.upper() == "B": #If the user inputs "B"
+            #If personB follower count is GREATER THAN or EQUAL to personA follower count
+            if personB_followerCount >= personA_followerCount:
+                score += 1 #Add 1 to the score
+                print(f"You're right! Current score: {score}") #Output the current score
+                index_personA = index_personB #Set variable index_personA to the index of the previous personB
+                index_personB = randint(0, len(data) -1) #Generate random index for personB
+            else: #If personB follower count is LESS THAN personA follower count
+                is_game_over = True #End the game or Game Over
+                system("clear") #Clear the screen
+                print(logo) #Print Game logo
+                print(f"Sorry, that's wrong. Final Score: {score}") #Output the final score
+        else: #If the user inputs anything other than "A" or "B"
+            is_game_over = True #End the game or Game Over
+            system("clear") #Clear the screen
+            print(logo) #Print Game logo
+            print(f"Wrong input: '{whos_higher}'") #Inform user of input
+            print(f"Final Score: {score}") #Output final score
+
+play_game()
