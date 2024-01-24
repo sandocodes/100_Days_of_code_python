@@ -34,6 +34,7 @@ score = 0
 index_personA = randint(0, len(data) - 1)
 index_personB = randint(0, len(data) - 1)
 
+# Start Game
 def play_game():
     # Print project logo and project introduction
     print(logo)
@@ -101,4 +102,4 @@ def play_game():
             print(f"Wrong input: '{whos_higher}'") #Inform user of input
             print(f"Final Score: {score}") #Output final score
 
-play_game()
+play_game() #End Game
