@@ -74,6 +74,5 @@ while machine_on:
 
     elif user_input == "off":
         machine_on = False
-        # print("Machine shutting down ...")
     else:
         print("Invalid input")
