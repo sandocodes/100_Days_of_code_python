@@ -2,7 +2,7 @@
 # def format_name(f_name, l_name): 
 #     formated_f_name = f_name.title()
 #     formated_l_name = l_name.title() 
-    
+
 #     return f"{formated_f_name} {formated_l_name}"
 
 # first = input("First name: ")
@@ -11,7 +11,6 @@
 # formated_string = format_name(first, last)
 
 # print(formated_string)
-
 
 
 def is_leap(year):
@@ -25,29 +24,30 @@ def is_leap(year):
             return True
     else:
         return False
-  
+
+
 # TODO: Add more code here 👇
 def days_in_month(year, month):
     """Takes a year and a month in number and return the number of days in the month, corresponding to the year"""
     month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-    
+
     if is_leap(year):
         if month == 2:
-            return 
+            return
             29
         else:
-            return 
+            return
             28
     else:
-        return 
+        return
         month_days[month - 1]
-  
-#🚨 Do NOT change any of the code below 
-year = int(input("Year: ")) # Enter a year
-month = int(input("Month in number: ")) # Enter a month
+
+
+# 🚨 Do NOT change any of the code below
+year = int(input("Year: "))  # Enter a year
+month = int(input("Month in number: "))  # Enter a month
 days = days_in_month(year, month)
 print(days)
-
 
 ############### Docstrings ###############
 # Docstrings are convenient ways to document our code.
