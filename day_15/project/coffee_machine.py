@@ -44,7 +44,11 @@ while machine_on:
     user_input = str(input(" What would you like? (espresso/latte/cappuccino): "))
 
     if user_input == "espresso" or user_input == "latte" or user_input == "cappuccino":
-        if (user_input == "espresso" and (data.resources["water"] < 50 or data.resources["coffee"] < 18)) or (user_input == "latte" and (data.resources["water"] < 200 or data.resources["milk"] < 150 or data.resources["coffee"] < 24)) or (user_input == "cappuccino" and (data.resources["water"] < 200 or data.resources["milk"] < 100 or data.resources["coffee"] < 24)):
+        if (user_input == "espresso" and (data.resources["water"] < 50 or data.resources["coffee"] < 18)) or (
+                user_input == "latte" and (
+                data.resources["water"] < 200 or data.resources["milk"] < 150 or data.resources["coffee"] < 24)) or (
+                user_input == "cappuccino" and (
+                data.resources["water"] < 200 or data.resources["milk"] < 100 or data.resources["coffee"] < 24)):
             print(f"Sorry, we're out of {user_input}")
         else:
             print("Please insert coins.")
