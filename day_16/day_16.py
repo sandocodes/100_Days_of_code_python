@@ -8,6 +8,20 @@ Object-Oriented Programming (OOP)
         Attributes: hold plates, responsible for tables, ect.
         Methods: take orders, take payments, etc.
 """
-# 
+# Constructing Objects and Accessing their attributes and methods
+# car = CarBluePrint()
+# car is the Object and CarBluePrint is the Class
 
+from turtle import Turtle, Screen
 
+timmy = Turtle()
+print(timmy)
+timmy.shape("turtle")
+timmy.color("coral")
+timmy.forward(100)
+
+my_screen = Screen()
+print(my_screen.canvheight)
+my_screen.exitonclick()
+
+# Object methods:
