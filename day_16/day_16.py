@@ -27,8 +27,10 @@ Object-Oriented Programming (OOP)
 
 from prettytable import PrettyTable
 
+
 table = PrettyTable()
-teddy.add_column("Pokemon", ["Good", "Bad", "Ugly"])
-teddy.add_column("Type", ["Good1", "Bad1", "Ugly1"])
+table.add_column("Pokemon", ["Good", "Bad", "Ugly"])
+table.add_column("Type", ["Good1", "Bad1", "Ugly1"])
+
 
 print(table)
