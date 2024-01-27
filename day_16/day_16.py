@@ -12,17 +12,23 @@ Object-Oriented Programming (OOP)
 # car = CarBluePrint()
 # car is the Object and CarBluePrint is the Class
 
-from turtle import Turtle, Screen
+# from turtle import Turtle, Screen
 
-
-timmy = Turtle()
-print(timmy)
-timmy.shape("turtle")
-timmy.color("coral")
-timmy.forward(100)
-
-my_screen = Screen()
-print(my_screen.canvheight)
-my_screen.exitonclick()
-
+# timmy = Turtle()
+# print(timmy)
+# timmy.shape("turtle")
+# timmy.color("coral")
+# timmy.forward(100)
+#
+# my_screen = Screen()
+# print(my_screen.canvheight)
+# my_screen.exitonclick()
 # Object methods:
+
+from prettytable import PrettyTable
+
+table = PrettyTable()
+teddy.add_column("Pokemon", ["Good", "Bad", "Ugly"])
+teddy.add_column("Type", ["Good1", "Bad1", "Ugly1"])
+
+print(table)
