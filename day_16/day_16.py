@@ -25,12 +25,9 @@ Object-Oriented Programming (OOP)
 # my_screen.exitonclick()
 # Object methods:
 
-from prettytable import PrettyTable
-
-
-table = PrettyTable()
-table.add_column("Pokemon", ["Good", "Bad", "Ugly"])
-table.add_column("Type", ["Good1", "Bad1", "Ugly1"])
-
-
-print(table)
+menu = [
+    MenuItem(name="latte", water=200, milk=150, coffee=24, cost=2.5),
+    MenuItem(name="espresso", water=50, milk=0, coffee=18, cost=1.5),
+    MenuItem(name="cappuccino", water=250, milk=50, coffee=24, cost=3),
+]
+print(menu)
