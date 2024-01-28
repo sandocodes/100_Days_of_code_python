@@ -10,7 +10,7 @@ from menu import Menu, MenuItem
 from coffee_maker import CoffeeMaker
 from money_machine import MoneyMachine
 
-<<<<<<< Updated upstream
+
 machine_on = True
 while machine_on:
     choice = input(f" What would you like? Type ({Menu().get_items()}): ").lower()
@@ -50,6 +50,3 @@ while machine_on:
                 add_to_profit = MoneyMachine().money_received - change
                 MoneyMachine().profit += add_to_profit
                 print(f"{add_to_profit} added to Profit")  # Test Purpose
-=======
-
->>>>>>> Stashed changes
