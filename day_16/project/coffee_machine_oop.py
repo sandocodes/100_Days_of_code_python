@@ -45,8 +45,10 @@ while machine_on:
                 item_ordered = Menu().find_drink(choice)
                 CoffeeMaker().make_coffee(item_ordered)
 
-                # Add to profit
+                # Update Profit
                 change = round(MoneyMachine().money_received - drink_cost, 2)
                 add_to_profit = MoneyMachine().money_received - change
                 MoneyMachine().profit += add_to_profit
-                print(f"{add_to_profit} added to Profit")  # Test Purpose
+                print(f"{add_to_profit} added to Profit")
+
+                # Update report

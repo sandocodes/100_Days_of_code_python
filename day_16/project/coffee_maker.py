@@ -26,8 +26,5 @@ class CoffeeMaker:
         """Deducts the required ingredients from the resources."""
         for item in order.ingredients:
             self.resources[item] -= order.ingredients[item]
-<<<<<<< Updated upstream
         print(f"Here is your {order.name} ☕️. Enjoy!")
-=======
-        print(f"Here is your {order.name} ☕️. Enjoy!")
->>>>>>> Stashed changes
+
