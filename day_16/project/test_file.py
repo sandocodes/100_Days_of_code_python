@@ -56,3 +56,6 @@ print(f"Here is your {item_order.name} ☕️. Enjoy!")
 
 for i in resources:
     print(f"{resources}")
+
+# Update Report
+
