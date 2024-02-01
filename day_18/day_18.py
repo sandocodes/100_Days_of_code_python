@@ -1,7 +1,8 @@
 # Understanding Python Turtle Module
-from turtle import Turtle, Screen
+import turtle as t
 
-tim = Turtle()
+screen = t.Screen()
+tim = t.Turtle()
 
 #Example 1. Draw a Sqare 100 x 100
 def turtle_square():
@@ -28,12 +29,23 @@ def dashed_line():
 
 # Random Colors
 import random
-color_list = ["red", "blue", "green", "purple", "medium violet red", "chartreuse", "sienna", "indian red", "olive drab", "slate gray"]
+
+t.colormode(255)
+# color_list = ["red", "blue", "green", "purple", "medium violet red", "chartreuse", "sienna", "indian red", "olive drab", "slate gray"]
 # my_color = random.choice(color_list)
+
+def random_color():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+
+    color = (r, g, b)
+    return color
+
 
 def random_shape():
     for shape_sides in range(3, 11):
-        tim.color(random.choice(color_list))
+        tim.color(random_color())
         for _ in range(shape_sides):
             shape_angle = 360 / shape_sides
             tim.forward(100)
@@ -59,7 +71,7 @@ tim.pensize(15)
 tim.speed("fastest")
 
 for _ in range(200):
-    tim.color(random.choice(color_list))
+    tim.color(random_color())
     tim.forward(30)
     tim.setheading(random.choice(directions))
 
@@ -82,7 +94,7 @@ for _ in range(200):
 
 
 
-screen = Screen()
+# screen = Screen()
 screen.exitonclick()
 
 # Importing Modules in python (different ways)
