@@ -63,26 +63,38 @@ def star_shape():
         tim.forward(100)
 # star_shape()
 
+############################################
+#       Example 4. Draw a Random Walk
+############################################
 
-# Example 4. Draw a Random Walk
 directions = [0, 90, 180, 270]
 
 tim.pensize(15)
 tim.speed("fastest")
 
-for _ in range(200):
-    tim.color(random_color())
-    tim.forward(30)
-    tim.setheading(random.choice(directions))
-
-    
+# for _ in range(200):
+#     tim.color(random_color())
+#     tim.forward(30)
+#     tim.setheading(random.choice(directions))
 
 
-# print(direction)
+#Example 5. Draw a Spirograph - Number of circle, each with a radius of 100 in distance. Use random colors and the Turtle documentation
+# Draw different number of circle
+# Each circle with a radius of 100 in distance
 
-#1. move forward
-#2. move left or right
-# tim.random.choice()
+def spirograph(num_of_circles):
+    # make pennum_of_circles thin
+    tim.pensize(1)
+
+    for _ in range(num_of_circles):
+        # Tilt the turtle to the left
+        tim.left(25)
+        # Use random colors
+        tim.color(random_color())
+        # Circle radius = 100
+        tim.circle(100)
+
+spirograph(500)
 
 
 
