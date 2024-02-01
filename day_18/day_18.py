@@ -87,20 +87,16 @@ def spirograph(num_of_circles):
     tim.pensize(1)
 
     for _ in range(num_of_circles):
-        # Tilt the turtle to the left
-        tim.left(25)
         # Use random colors
         tim.color(random_color())
         # Circle radius = 100
         tim.circle(100)
+        # current position
+        current_heading = tim.heading()
+        # Tilt the turtle to the left
+        tim.setheading(current_heading + 5)
 
 spirograph(500)
-
-
-
-
-
-
 
 
 
