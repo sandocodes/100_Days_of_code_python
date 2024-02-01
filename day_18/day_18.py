@@ -82,21 +82,20 @@ tim.speed("fastest")
 # Draw different number of circle
 # Each circle with a radius of 100 in distance
 
-def spirograph(num_of_circles):
-    # make pennum_of_circles thin
+
+def draw_spirograph(size_of_gap):
+    # make pencil thin
     tim.pensize(1)
 
-    for _ in range(num_of_circles):
-        # Use random colors
+    for _ in range(int(360 / size_of_gap)):
+        # Get random color for each circle
         tim.color(random_color())
         # Circle radius = 100
         tim.circle(100)
-        # current position
-        current_heading = tim.heading()
         # Tilt the turtle to the left
-        tim.setheading(current_heading + 5)
+        tim.setheading(tim.heading() + size_of_gap)
 
-spirograph(500)
+draw_spirograph(5)
 
 
 
