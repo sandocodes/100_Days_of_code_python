@@ -19,5 +19,5 @@ brush = Turtle()
 
 
 
-# screen = Screen()
-# screen.exitonclick()
+screen = Screen()
+screen.exitonclick()
