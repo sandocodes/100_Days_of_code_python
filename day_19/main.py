@@ -18,32 +18,33 @@ def move_backward():
     tim.backward(10)
 
 
-# Counterclockwise
-def counter_clock():
-    tim.setheading(45)
+# Counterclockwise OR LEFTWARD
+def turn_left():
+    new_heading = tim.heading() + 10
+    tim.setheading(new_heading)
 
 
-# Clockwise
-def clockwise():
-    tim.setheading(90)
+# Clockwise OR RIGHTWARD
+def turn_right():
+    new_heading = tim.heading() - 10
+    tim.setheading(new_heading)
+
+
+# Clear Screen
+def clear_screen():
+    tim.clear()
+    tim.penup()
+    tim.home()
+    tim.pendown()
 
 
 screen.listen()
 
+screen.onkey(key="w", fun=move_forward)
+screen.onkey(key="s", fun=move_backward)
+screen.onkey(key="d", fun=turn_right)
+screen.onkey(key="a", fun=turn_left)
+screen.onkey(key="c", fun=clear_screen)
 
-def move(key, *args):
-    screen.onkey(key=key, fun=**kwargs)
-
-    if key == "W":
-        move_forward()
-    elif key == "S":
-        move_backward()
-    elif key == "A":
-        counter_clock()
-    else:
-        clockwise()
-
-
-move("W")
 
 screen.exitonclick()
