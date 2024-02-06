@@ -6,9 +6,6 @@ tim = Turtle()
 screen = Screen()
 
 
-# right(0) - east --> counterclock
-#
-
 
 def move_forward():
     tim.forward(10)
