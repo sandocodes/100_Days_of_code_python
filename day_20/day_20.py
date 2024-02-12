@@ -24,3 +24,4 @@ while game_is_on:
         seg.forward(20)
 
 # Display Screen and Exit on click
+screen.exitonclick()
