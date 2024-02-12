@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="edbd9e11-6833-4bfc-8f18-77ed60ec2a82" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/day_15/day_15.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2bPkYJj3lbvRMB7bQZJMPG5tn0o" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.coffee_machine.executor": "Run",
+    "Python.coffee_machine_oop.executor": "Run",
+    "Python.data.executor": "Run",
+    "Python.day_15.executor": "Run",
+    "Python.day_16.executor": "Run",
+    "Python.day_17.executor": "Run",
+    "Python.day_19.executor": "Run",
+    "Python.day_20.executor": "Run",
+    "Python.herst_spot_painting1.executor": "Run",
+    "Python.higher_or_lower.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.password_generator.executor": "Run",
+    "Python.question_model.executor": "Run",
+    "Python.quiz_brain.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/thekollies/Desktop/2024Docs/projects/tuts_projects/udemy_bootcamp/100_Days_of_code_python",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="C:\Users\thekollies\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="4c421778-33d1-41e4-a6bd-007b22f2f913" reportId="100_Days_of_code_python/qodana/2024-02-01" />
+    </option>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="edbd9e11-6833-4bfc-8f18-77ed60ec2a82" name="Changes" comment="" />
+      <created>1706124148101</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706124148101</updated>
+      <workItem from="1706124149181" duration="216000" />
+      <workItem from="1706124394252" duration="5030000" />
+      <workItem from="1706130749065" duration="2759000" />
+      <workItem from="1706180655316" duration="25915000" />
+      <workItem from="1706216464384" duration="2539000" />
+      <workItem from="1706284881471" duration="514000" />
+      <workItem from="1706286441971" duration="2978000" />
+      <workItem from="1706291200306" duration="305000" />
+      <workItem from="1706291524181" duration="69000" />
+      <workItem from="1706291615505" duration="2919000" />
+      <workItem from="1706395929397" duration="8000" />
+      <workItem from="1706655196666" duration="412000" />
+      <workItem from="1706655638942" duration="121000" />
+      <workItem from="1706656143501" duration="17101000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/100_Days_of_code_python$higher_or_lower.coverage" NAME="higher_or_lower Coverage Results" MODIFIED="1706126445832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_14/project" />
+    <SUITE FILE_PATH="coverage/100_Days_of_code_python$day_16.coverage" NAME="day_16 Coverage Results" MODIFIED="1706292693058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_16" />
+    <SUITE FILE_PATH="coverage/100_Days_of_code_python$quiz_brain.coverage" NAME="quiz_brain Coverage Results" MODIFIED="1706666285702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_17/project" />
+    <SUITE FILE_PATH="coverage/100_Days_of_code_python$main.coverage" NAME="main Coverage Results" MODIFIED="1706668584500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_17/project" />
+    <SUITE FILE_PATH="coverage/100_Days_of_code_python$coffee_machine_oop.coverage" NAME="coffee_machine_oop Coverage Results" MODIFIED="1706655267854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_16/project" />
+    <SUITE FILE_PATH="coverage/100_Days_of_code_python$question_model.coverage" NAME="question_model Coverage Results" MODIFIED="1706658863987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_17/project" />
+    <SUITE FILE_PATH="coverage/100_Days_of_code_python$password_generator.coverage" NAME="password_generator Coverage Results" MODIFIED="1706756379078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practices/password_generator_oop" />
+    <SUITE FILE_PATH="coverage/100_Days_of_code_python$coffee_machine.coverage" NAME="coffee_machine Coverage Results" MODIFIED="1706208683296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_15/project" />
+    <SUITE FILE_PATH="coverage/100_Days_of_code_python$day_15.coverage" NAME="day_15 Coverage Results" MODIFIED="1706130023018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_15" />
+    <SUITE FILE_PATH="coverage/100_Days_of_code_python$day_17.coverage" NAME="day_17 Coverage Results" MODIFIED="1706660995140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_17" />
+    <SUITE FILE_PATH="coverage/100_Days_of_code_python$data.coverage" NAME="data Coverage Results" MODIFIED="1706659945757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_17/project" />
+  </component>
+</project>
