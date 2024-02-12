@@ -15,7 +15,7 @@ def smart_divide(func):
 
 @smart_divide
 def divide(x, y):
-    print(f"Your monthly bill per line is ${x / y}")
+    print(f"Your monthly bill per line is ${round(x / y, 2)}")
 
 
 # Verizon: With iPhone
