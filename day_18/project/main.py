@@ -1,18 +1,18 @@
 import turtle as t
 from colors import RandomColors
 
-random_colors = RandomColors()
-
-brush = t.Turtle()
-brush.speed("fastest")
-brush.penup()
-brush.hideturtle()
 screen = t.Screen()
-t.colormode(255)
+brush = t.Turtle()
 
 
 # Draw a (10 X 10) Painting with Random Colors
 def _painting_dots():
+    random_colors = RandomColors()
+
+    brush.speed("fastest")
+    brush.penup()
+    brush.hideturtle()
+    t.colormode(255)
     brush.setheading(225)
     brush.forward(300)
     brush.setheading(0)
