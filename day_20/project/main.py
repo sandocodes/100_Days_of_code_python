@@ -1,6 +1,7 @@
 # Snake Game
 from turtle import Screen
 from snake import Snake
+from food import Food
 import time
 
 screen = Screen()
@@ -10,6 +11,7 @@ screen.title("My Snake Game")
 screen.tracer(0)
 
 snake = Snake()
+food = Food()
 
 # Listen of keystrokes (Up, Down, Left and Right)
 screen.listen()
