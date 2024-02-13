@@ -1,3 +1,2 @@
-# Snake Game
-from turtle import Screen, Turtle
-
+# CREATED SNAKE GAME
+# CHECK PROJECT FOLDER
