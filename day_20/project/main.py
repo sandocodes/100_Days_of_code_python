@@ -1,11 +1,11 @@
 # Snake Game
-from turtle import Screen
+from turtle import Screen, Turtle
 from snake import Snake
 from food import Food
-from scoreboard import Scoreboard
+from scoreboard import Scoreboard, FONT
 import time
 
-
+tur = Turtle()
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("black")
@@ -15,6 +15,8 @@ screen.tracer(0)
 snake = Snake()
 food = Food()
 scoreboard = Scoreboard()
+
+
 
 # Listen of keystrokes (Up, Down, Left and Right)
 screen.listen()
@@ -36,5 +38,15 @@ while game_is_on:
 
         # Update the score when the snake eats the food
         scoreboard.increase_score()
+
+    # Detect collision with the wall to end the game.
+    if (snake.snake_head.ycor() > 280 or snake.snake_head.ycor() < -280 or snake.snake_head.xcor() > 280 or snake.
+            snake_head.xcor() < -280):
+        game_is_on = False
+        tur.color("white")
+        tur.hideturtle()
+        tur.write("GAME OVER, YOU HIT THE WALL", align="center", font=FONT)
+
+
 
 screen.exitonclick()
