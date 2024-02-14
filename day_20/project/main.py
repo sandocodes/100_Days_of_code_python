@@ -16,8 +16,6 @@ snake = Snake()
 food = Food()
 scoreboard = Scoreboard()
 
-
-
 # Listen of keystrokes (Up, Down, Left and Right)
 screen.listen()
 screen.onkey(snake.up, "Up")
@@ -46,7 +44,8 @@ while game_is_on:
         tur.color("white")
         tur.hideturtle()
         tur.write("GAME OVER, YOU HIT THE WALL", align="center", font=FONT)
-
+        tur.goto(0, -40)
+        tur.write(f"Your Final {scoreboard.increase_score()}", align="center", font=FONT)
 
 
 screen.exitonclick()
