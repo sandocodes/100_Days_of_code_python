@@ -41,11 +41,7 @@ while game_is_on:
     if (snake.snake_head.ycor() > 280 or snake.snake_head.ycor() < -280 or snake.snake_head.xcor() > 280 or snake.
             snake_head.xcor() < -280):
         game_is_on = False
-        tur.color("white")
-        tur.hideturtle()
-        tur.write("GAME OVER, YOU HIT THE WALL", align="center", font=FONT)
-        tur.goto(0, -40)
-        tur.write(f"Your Final {scoreboard.increase_score()}", align="center", font=FONT)
+        scoreboard.game_over()
 
 
 screen.exitonclick()
