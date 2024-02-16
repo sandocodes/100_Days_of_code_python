@@ -4,7 +4,6 @@ from paddle import Paddle
 from ball import Ball
 import time
 
-
 screen = Screen()
 # Screen Setup
 screen.setup(width=800, height=600)
@@ -28,6 +27,14 @@ while game_is_on:
     time.sleep(0.1)
     screen.update()
     ball.move()
+
+    # Detect collision with top or bottom walls
+    if ball.ycor() > 280 or ball.ycor() < -280:
+        ball.bounce_y()
+
+    # Detect collision with the paddle(s)
+    if ball.distance(r_paddle) < 50 and ball.xcor() > 340:
+        ball.bounce_x()
 
 
 screen.exitonclick()
