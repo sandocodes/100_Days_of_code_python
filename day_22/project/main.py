@@ -45,7 +45,8 @@ while game_is_on:
         if scoreboard.l_score == 10:
             game_is_on = False
             scoreboard.game_over()
-    elif ball.xcor() < -380:
+            
+    if ball.xcor() < -380:
         ball.reset_position()
         scoreboard.right_score()
         if scoreboard.r_score == 10:
