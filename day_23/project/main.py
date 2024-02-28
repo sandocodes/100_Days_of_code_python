@@ -16,12 +16,12 @@ screen.setup(width=600, height=600)
 
 # ########################## #
 
-
-new_car = Turtle("square")
-new_car.color(random.choice(COLORS))
-new_car.shapesize(stretch_wid=2, stretch_len=4)
-new_car.penup()
-new_car.goto(random.randint(0, 200), random.randint(-200, 200))
+for _ in range(10):
+    new_car = Turtle("square")
+    new_car.color(random.choice(COLORS))
+    new_car.shapesize(stretch_wid=2, stretch_len=4)
+    new_car.penup()
+    new_car.goto(random.randint(0, 200), random.randint(-200, 200))
 
 
 # ########################## #
