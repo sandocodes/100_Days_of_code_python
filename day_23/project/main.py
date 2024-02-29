@@ -11,6 +11,7 @@ screen.tracer(0)
 # Player
 player = Player()
 car_manager = CarManager()
+scoreboard = Scoreboard()
 
 # Listen for Up button press to Move Player
 screen.listen()
@@ -29,7 +30,7 @@ while game_is_on:
     for car in car_manager.all_cars:
         if car.distance(player) < 25:
             game_is_on = False
-            print("Game Over")
+            scoreboard.game_over()
 
     # Detect when the Turtle crosses to the other side
     if player.is_at_finish_line():
@@ -38,5 +39,6 @@ while game_is_on:
 
         # Increase Car Speed by Leveling Up
         car_manager.level_up()
+        scoreboard.update_level()
 
 screen.exitonclick()
