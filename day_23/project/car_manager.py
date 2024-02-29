@@ -2,17 +2,14 @@ from turtle import Turtle
 import random
 
 COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
-STARTING_MOVE_DISTANCE = 5
+STARTING_MOVE_SPEED = 5
 MOVE_INCREMENT = 10
-
-
-# random_car_position = (0, random.randint(-231, 231))
 
 
 class CarManager:
     def __init__(self):
         self.all_cars = []
-        self.car_speed = STARTING_MOVE_DISTANCE
+        self.car_speed = STARTING_MOVE_SPEED
 
     def create_car(self):
         random_chance = random.randint(1, 6)
