@@ -1,6 +1,6 @@
 import time
 from turtle import Screen
-from player import Player
+from player import Player, FINISH_LINE_Y
 from car_manager import CarManager
 from scoreboard import Scoreboard
 
@@ -18,7 +18,7 @@ screen.onkey(player.move_forward, "Up")
 
 game_is_on = True
 while game_is_on:
-    time.sleep(0.1)
+    time.sleep(car_manager.car_speed)
     screen.update()
 
     # CARS
@@ -31,5 +31,12 @@ while game_is_on:
             game_is_on = False
             print("Game Over")
 
+    # Detect when the Turtle crosses to the other side
+    if player.is_at_finish_line():
+        # Bring Player back to Starting Position
+        player.go_to_start()
+
+        # Increase Car Speed by Leveling Up
+        car_manager.level_up()
 
 screen.exitonclick()
