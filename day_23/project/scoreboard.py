@@ -22,7 +22,7 @@ class Scoreboard(Turtle):
 
     # Update Level
     def update_level(self):
-        """ Increases Level each time turtle makes it across."""
+        """Increases Level each time turtle makes it across."""
         self.level += 1
         self.clear()
         self.display_level()
