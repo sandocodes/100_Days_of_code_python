@@ -9,10 +9,15 @@
 
 invite_names = []  # invited names
 replacement_txt = "[Test]"
-with open("./Output/ReadyToSend/example.txt", "w") as example_file:
+
+with open('./Input/Names/invited_names.txt') as invites:
+    print()
+
+# for name in invite_names:
+with open(f'./Output/ReadyToSend/example.txt', 'w') as example_file:
     # Write the contents of the 'starter_letter.txt' to example file
     with open("./Input/Letters/starting_letter.txt") as starter_letter:
         letter_lines = starter_letter.readlines()
         for line in letter_lines:
-            line.replace("[name]", replacement_txt)
-            example_file.write(f"{line.strip()}\n")
+            example_file.write(f"{line.replace('[name]', replacement_txt).strip()}\n")
+        
