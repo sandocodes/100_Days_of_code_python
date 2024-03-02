@@ -17,7 +17,7 @@ with open('./Input/Names/invited_names.txt') as invites:
         invite_names.append(name.strip())
 
 for inv_name in invite_names:
-    with open(f'./Output/ReadyToSend/{inv_name.strip()}.txt', 'w') as example_file:
+    with open(f'./Output/ReadyToSend/letter_for_{inv_name.strip()}.txt', 'w') as example_file:
         # Write the contents of the 'starter_letter.txt' to example file
         with open("./Input/Letters/starting_letter.txt") as starter_letter:
             letter_lines = starter_letter.readlines()
@@ -26,3 +26,4 @@ for inv_name in invite_names:
                 formatted_lines = line.replace('[name]', f"{inv_name}").rstrip()
                 print(formatted_lines)
                 example_file.write(f"{formatted_lines}\n")
+                
