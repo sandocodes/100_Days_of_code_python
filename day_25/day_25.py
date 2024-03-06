@@ -52,11 +52,15 @@ data_dict = {
 }
 
 data = pandas.DataFrame(data_dict)
-# print(data)
+print(data)
 
-# Eg: Get the row of the student with the highest grades
-# 1. Get the highest grade
-highest_grade = data["grades"].max()
-# 2. Row with the highest grade (Name and Grade)
-highest_grade_row = data[data.grades == highest_grade]
-print(highest_grade_row)
+# # Eg: Get the row of the student with the highest grades
+# # 1. Get the highest grade
+# highest_grade = data["grades"].max()
+# # 2. Row with the highest grade (Name and Grade)
+# highest_grade_row = data[data.grades == highest_grade]
+# print(highest_grade_row)
+
+
+# Converting DataFrames back to CSV files
+data.to_csv("new_data.csv") #to_csv() takes the path where you want to save the file as an argument.
