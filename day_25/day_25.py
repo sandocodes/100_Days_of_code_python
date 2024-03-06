@@ -43,8 +43,6 @@ import pandas
 # mond_temp_f = mond_temp * 9/5 + 32
 # print(mond_temp_f)
 
-
-
 # Creating DataFrames from scratch
 data_dict = {
     "students": ["Amy", "James", "Shakea"],
@@ -60,7 +58,6 @@ print(data)
 # # 2. Row with the highest grade (Name and Grade)
 # highest_grade_row = data[data.grades == highest_grade]
 # print(highest_grade_row)
-
 
 # Converting DataFrames back to CSV files
 data.to_csv("new_data.csv") #to_csv() takes the path where you want to save the file as an argument.
