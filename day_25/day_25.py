@@ -12,11 +12,11 @@ import pandas
 
 
 # Pandas Library
-data = pandas.read_csv("./weather_data.csv")
+# data = pandas.read_csv("./weather_data.csv")
 # print(data)
 
 # Pandas DataFrames and Series: Working with Rows and Columns
-data_dict = data.to_dict()
+# data_dict = data.to_dict()
 # print(data_dict)
 
 # Data Series
@@ -30,15 +30,33 @@ data_dict = data.to_dict()
 # print(f"Min temp: {round(min_temp, 2)}")
 
 # Selecting specific row data
-monday = data[data.day == "Monday"]
-print(monday)
+# monday = data[data.day == "Monday"]
+# print(monday)
 
-# Eg. Get the row where the temperature is at its maximum
-maximum_temp = data[data.temp == data.temp.max()]
-# print(maximum_temp)
+# # Eg. Get the row where the temperature is at its maximum
+# maximum_temp = data[data.temp == data.temp.max()]
+# # print(maximum_temp)
 
-# Eg: Convert Monday's temp value to Frenheit
-monday = data[data.day == "Monday"]
-mond_temp = monday.temp[0]
-mond_temp_f = mond_temp * 9/5 + 32
-print(mond_temp_f)
+# # Eg: Convert Monday's temp value to Frenheit
+# monday = data[data.day == "Monday"]
+# mond_temp = monday.temp[0]
+# mond_temp_f = mond_temp * 9/5 + 32
+# print(mond_temp_f)
+
+
+
+# Creating DataFrames from scratch
+data_dict = {
+    "students": ["Amy", "James", "Shakea"],
+    "grades": [75, 85, 99]
+}
+
+data = pandas.DataFrame(data_dict)
+# print(data)
+
+# Eg: Get the row of the student with the highest grades
+# 1. Get the highest grade
+highest_grade = data["grades"].max()
+# 2. Row with the highest grade (Name and Grade)
+highest_grade_row = data[data.grades == highest_grade]
+print(highest_grade_row)
