@@ -17,15 +17,17 @@ guessed_state = []
 
 
 while len(guessed_state) < 50:
+    # Get input from the user and convert it to title-cased
     answer_state = screen.textinput(title=f"{len(guessed_state)}/{len(all_states)} State Correct", prompt="What's another state name?").title()
 
     # If the user enters "Exit"
     if answer_state == "Exit":
         missing_state = []
 
-        # Check which states the user didn't guess
+        # Check which states the user was unable to guess
         for state in all_states:
             if state not in guessed_state:
+                # add those unguessed states to the missing_state list
                 missing_state.append(state)
     
         # Create a dataframe and save to a new file
