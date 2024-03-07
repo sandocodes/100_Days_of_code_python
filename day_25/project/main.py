@@ -10,7 +10,7 @@ screen.addshape(game_image)
 turtle.shape(game_image)
 
 data = pandas.read_csv("50_states.csv", index_col=False)
-print(data)
+# print(data)
 
 # list of states
 all_states = data["state"].to_list()
@@ -20,8 +20,20 @@ guessed_state = []
 while len(guessed_state) < 50:
     answer_state = screen.textinput(title=f"{len(guessed_state)}/{len(all_states)} State Correct", prompt="What's another state name?").title()
 
+    if answer_state == "Exit":
+        missing_state = []
+        for state in all_states:
+            if state not in guessed_state:
+                missing_state.append(state)
     
-    
+        states_to_learn = {
+            "state": missing_state,
+        }
+
+        df = pandas.DataFrame(states_to_learn)
+        df.to_csv("states_to_learn.csv")
+        
+        break
 
     # Check if the state exists
     if (answer_state in all_states) and (answer_state not in guessed_state):
