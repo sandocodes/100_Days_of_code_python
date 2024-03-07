@@ -30,7 +30,7 @@ while len(guessed_state) < 50:
                 # add those unguessed states to the missing_state list
                 missing_state.append(state)
     
-        # Create a dataframe and save to a new file
+        # Create a dataframe of the missing states and save to a new file called 'states_to_learn.csv'
         df = pandas.DataFrame(missing_state)
         df.to_csv("states_to_learn.csv")
 
