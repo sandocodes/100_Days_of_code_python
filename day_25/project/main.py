@@ -8,9 +8,10 @@ screen.addshape(game_image)
 
 turtle.shape(game_image)
 
+# Import csv data
 data = pandas.read_csv("50_states.csv", index_col=False)
 
-# list of states
+# List of all states
 all_states = data["state"].to_list()
 guessed_state = []
 
@@ -31,7 +32,7 @@ while len(guessed_state) < 50:
         df = pandas.DataFrame(missing_state)
         df.to_csv("states_to_learn.csv")
 
-        # Exit the game
+        # Exit(End) the game loop
         break
 
     # Check if the state exists
@@ -43,9 +44,11 @@ while len(guessed_state) < 50:
         state_x_cor = int(state_data.x.to_string(index=False))
         state_y_cor = int(state_data.y.to_string(index=False))
 
+        # Move state to it's necessary cordinates
         t.goto(state_x_cor, state_y_cor)
         t.write(answer_state)
 
+        # Add user guessed (right) answers to the guessed_state list
         guessed_state.append(answer_state)
 
 
