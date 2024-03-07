@@ -12,7 +12,7 @@ import pandas
 
 
 # Pandas Library
-# data = pandas.read_csv("./weather_data.csv")
+data = pandas.read_csv("./weather_data.csv")
 # print(data)
 
 # Pandas DataFrames and Series: Working with Rows and Columns
@@ -20,22 +20,22 @@ import pandas
 # print(data_dict)
 
 # Data Series
-# temp = data["temp"] #to get the data in the temp column. Can also be done using data.temp
-# average_temp = temp.mean()
-# max_temp = temp.max()
-# min_temp = temp.min()
-# print(f"Temperatures: {temp}")
-# print(f"Average temp: {round(average_temp, 2)}")
-# print(f"Max temp: {round(max_temp, 2)}")
-# print(f"Min temp: {round(min_temp, 2)}")
+temp = data["temp"] #to get the data in the temp column. Can also be done using data.temp
+average_temp = temp.mean()
+max_temp = temp.max()
+min_temp = temp.min()
+print(f"Temperatures: {temp}")
+print(f"Average temp: {round(average_temp, 2)}")
+print(f"Max temp: {round(max_temp, 2)}")
+print(f"Min temp: {round(min_temp, 2)}")
 
 # Selecting specific row data
-# monday = data[data.day == "Monday"]
-# print(monday)
+monday = data[data.day == "Monday"]
+print(monday.count())
 
 # # Eg. Get the row where the temperature is at its maximum
-# maximum_temp = data[data.temp == data.temp.max()]
-# # print(maximum_temp)
+maximum_temp = data[data.temp == data.temp.max()]
+# print(maximum_temp)
 
 # # Eg: Convert Monday's temp value to Frenheit
 # monday = data[data.day == "Monday"]
@@ -50,7 +50,7 @@ data_dict = {
 }
 
 data = pandas.DataFrame(data_dict)
-print(data)
+# print(data)
 
 # # Eg: Get the row of the student with the highest grades
 # # 1. Get the highest grade
@@ -61,3 +61,7 @@ print(data)
 
 # Converting DataFrames back to CSV files
 data.to_csv("new_data.csv") #to_csv() takes the path where you want to save the file as an argument.
+
+
+# 
+
