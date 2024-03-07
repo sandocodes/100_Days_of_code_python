@@ -52,20 +52,3 @@ while len(guessed_state) < 50:
 
         # Add user guessed (right) answers to the guessed_state list
         guessed_state.append(answer_state)
-
-
-
-
-
-
-
-
-
-
-# def get_mouse_click_coor(x, y):
-#     print(x, y)
-
-# turtle.onscreenclick(get_mouse_click_coor)
-# turtle.mainloop()
-
-# screen.exitonclick()
