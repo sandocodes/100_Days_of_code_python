@@ -22,14 +22,8 @@ while len(guessed_state) < 50:
 
     # If the user enters "Exit"
     if answer_state == "Exit":
-        missing_state = []
+        missing_state = [state for state in all_states if state not in guessed_state]
 
-        # Check which states the user was unable to guess
-        for state in all_states:
-            if state not in guessed_state:
-                # add those unguessed states to the missing_state list
-                missing_state.append(state)
-    
         # Create a dataframe of the missing states and save to a new file called 'states_to_learn.csv'
         df = pandas.DataFrame(missing_state)
         df.to_csv("states_to_learn.csv")
