@@ -10,7 +10,7 @@ numbers = [1, 2, 3]
 # print(new_list)
 
 
-# List Comprehension Syntax: new_list = [new_item for item in list]
+# List Comprehension Syntax: new_list = [new_item for item in list [condition - optional]]
 second_list = [n + 1 for n in numbers]
 # print(second_list)
 
