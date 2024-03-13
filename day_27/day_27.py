@@ -1,1 +1,1 @@
-# Learning tkinter a Python GUI library
+# Learning Tkinter a Python GUI library
