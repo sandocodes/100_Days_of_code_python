@@ -18,4 +18,35 @@ second_list = [n + 1 for n in numbers]
 # Square:
 numbers = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 squared_numbers = [num * num for num in numbers]
-print(squared_numbers)
+# print(squared_numbers)
+
+
+# Dictionary Comprehension
+# Syntax: {new_key:new_value for item in list}
+import random, pandas
+
+# Example: Let's generate random numbers for each item in a list
+# names = ["Alex", "James", "Jarso", "Martina", "Prinecss", "Chris", "Daniel"]
+# stu_scores = {student:random.randint(60, 100) for student in names}
+# print(f"All Scores: {stu_scores}")
+
+# passed_students = {student:stu_scores[student] for student in stu_scores if stu_scores[student] >= 70}
+# failed_students = {student:stu_scores[student] for student in stu_scores if stu_scores[student] <= 69}
+# print(f"Failed: {failed_students}")
+# print(f"Passed: {passed_students}")
+
+
+weather_c = {
+    "Monday": 12, 
+    "Tuesday": 14, 
+    "Wednesday": 15, 
+    "Thursday": 14, 
+    "Friday": 21, 
+    "Saturday": 22, 
+    "Sunday": 24
+}
+
+# Write your code 👇 below:
+
+weather_f = {temp:(weather_c[temp] * 9/5) + 32 for temp in weather_c}
+print(weather_f)
