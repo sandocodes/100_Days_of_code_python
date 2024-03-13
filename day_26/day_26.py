@@ -49,5 +49,18 @@ weather_c = {
 # Write your Weather temperature in Farenheight
 # Celcius to Farenheight: (temp * 9/5) + 32
 
-weather_f = {temp:(weather_c[temp] * 9/5) + 32 for temp in weather_c}
-print(weather_f)
+weather_f = {temp:weather_c[temp] * 9/5 + 32 for temp in weather_c}
+# print(weather_f)
+
+# Iterating over Pandas DataFrame:
+student_dict = {
+    "student": ["Jarso", "Madison", "James Prowd", "Chris"],
+    "scores": [96, 85, 91, 97]
+}
+
+student_df = pandas.DataFrame(student_dict)
+# print(student_df)
+
+# Loop over pandas dataframe
+for (index, row) in student_df.iterrows():
+    print(index)
