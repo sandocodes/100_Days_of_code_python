@@ -46,7 +46,8 @@ weather_c = {
     "Sunday": 24
 }
 
-# Write your code 👇 below:
+# Write your Weather temperature in Farenheight
+# Celcius to Farenheight: (temp * 9/5) + 32
 
 weather_f = {temp:(weather_c[temp] * 9/5) + 32 for temp in weather_c}
 print(weather_f)
